@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSS-SVNIT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="gallery_style.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "u21ec130@eced.svnit.ac.in",
+                Password: "NIT14102002",
+                To: 'u21ec130@eced.svnit.ac.in',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "Name:-" + document.getElementById("name").value
+                    + "<br>Phone Number:-+91" + document.getElementById("phone").value
+                    + "<br>Email:-" + document.getElementById("email").value
+                    + "<br>Query:-" + document.getElementById("message").value
+            }).then(
+                message => alert("Message Sent Successfully.We Will Get Back Soon.")
+            );
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="logo.png" alt="NSS-SVNIT"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li class="item"><a href="about us1.html">ABOUT</a></li>
+                <li class="item"><a href="activities.html">ACTIVITIES</a></li>
+                
+                <li class="item"><a href="home.html">HOME</a></li>
+               
+                <li class="item"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="midsec">
+        <section class="gal">
+            <div id="galbox"><a href="https://drive.google.com/drive/folders/13RT0WR28rDYWrnH7WLT89M5qokN_mMBy" > <img src="independance.jpg" alt=""></a>
+            </div>
+            <div id="galbox"><a href="https://drive.google.com/drive/folders/1RuO258U-Le9WpzV0shv_Vc3gwIop9VOd" > <img src="sac.jpg" alt=""></a>
+            </div>
+            <div id="galbox"><a href="https://drive.google.com/drive/folders/1IiFXKTL78RDKfn017LziWUsQHTuZeN-v" > <img src="youthday.jpg" alt=""></a>
+            </div>
+        </section>
+        <section class="gal">
+            <div id="galbox"><a href="https://drive.google.com/drive/folders/1IZbYcu_K3CBJdX3kDl1MuXKpx0ZXHbvV" > <img src="industrialvisit.jpg" alt=""></a>
+            </div>
+            <div id="galbox"><a href="https://drive.google.com/drive/folders/1KifPI2iVGC4qkhxtxUk_elJdR5IWHjuF" > <img src="hgt.jpg" alt=""></a>
+            </div>
+            <div id="galbox"><a href="https://drive.google.com/drive/folders/13RlLEsek2XD68o9KrP30LniqnT_V4EOI" > <img src="cd.jpg" alt=""></a>
+            </div>
+        </section>
+        <section class="gal">
+            <div id="galbox"><a href="https://drive.google.com/drive/folders/1391UqOjhr943swoSvPFX4Hrk6IkfZj0a" > <img src="ashtaang.jpg" alt=""></a>
+            </div>
+            <div id="galbox"><a href="https://drive.google.com/drive/folders/1-4OBMfm6zLEuj4bH0u4JmziVZwSR5iel" > <img src="ea.JPG" alt=""></a>
+            </div>
+            <div id="galbox"><a href="https://drive.google.com/drive/folders/1CO8x_CY5_SDQe2S4TwquwLYv7mzCCHUE" > <img src="camp.jpg" alt=""></a>
+            </div>
+        </section>
+        <footer>
+            <h3>Join NSS Community</h3>
+            <div id="soc">
+                <div class="lg"><a href="https://www.facebook.com/">
+                        <img src="1.jpg" alt="Facebook">
+                    </a>
+                </div>
+                <div class="lg"><a href="https://www.instagram.com/adworks.in/">
+                        <img src="2.jpg" alt="Instagramk">
+                    </a>
+                </div>
+                <div class="lg"><a href="https://www.linkedin.com/">
+                        <img src="3.jpg" alt="Twitter">
+                    </a>
+                </div>
+                <div class="lg"><a href="https://in.pinterest.com/">
+                        <img src="4.jpg" alt="Gmail">
+                    </a>
+                </div>
+                <div class="lg"><a href="https://twitter.com/">
+                        <img src="7.jpg" alt="Gmail">
+                    </a>
+                </div>
+                <div class="lg"><a href="tel:+919723919835">
+                        <img src="9.jpg" alt="Gmail">
+                    </a>
+                </div>
+                <div class="lg"><a href="https://www.youtube.com/">
+                        <img src="10.jpg" alt="Gmail">
+                    </a>
+                </div>
+            </div>
+            <div class="contact">
+                <ul id="detail">
+                    <li>Sardar Vallabhbhai National Institute of Technology,
+                        Ichchhanath,Surat-395007, Gujarat, INDIA</li>
+                </ul>
+                <iframe id="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14883.046651757!2d72.77672580014523!3d21.16188119911962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dec8b56fdf3%3A0x423b99085d26d1f9!2sSardar%20Vallabhbhai%20National%20Institute%20of%20Technology%2C%20SVNIT.!5e0!3m2!1sen!2sin!4v1683705477121!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+</body>
+
+</html>

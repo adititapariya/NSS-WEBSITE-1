@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSS-SVNIT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style_pc.css" />
+
+    <script>
+      function scrollReveal() {
+        var reveals = document.querySelectorAll("#scroll-reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var revealTop = reveals[i].getBoundingClientRect().top;
+          var revealPoint = 50;
+
+          if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", scrollReveal);
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="home.html"><img src="logo.png" alt="NSS-SVNIT" /></a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="item"><a href="about us1.html">ABOUT</a></li>
+          <li class="item"><a href="activities.html">ACTIVITIES</a></li>
+
+          <li class="item"><a href="gallery.html">GALLERY</a></li>
+
+          <li class="item"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="midsec">
+      <div class="news-section">
+        <h2><u>UPDATES</u></h2>
+        <ul class="news-list">
+          <li>
+            <h3>NSS-ORIENTATION</h3>
+            <p class="date">March 31, 2023</p>
+            <p class="excerpt">
+              There Is Delay In Dates Of Orientation. Hence There Will Be
+              Meeting After Sparsh.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </li>
+          <li>
+            <h3>Article Title</h3>
+            <p class="date">March 29, 2023</p>
+            <p class="excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </li>
+          <li>
+            <h3>Article Title</h3>
+            <p class="date">March 25, 2023</p>
+            <p class="excerpt">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+          </li>
+        </ul>
+      </div>
+      <!--image slider start-->
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="middle2.jpg" alt="" />
+          </div>
+          <div class="slide">
+            <img src="NP1.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="NP2.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="NP3.png" alt="" />
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+
+      <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+          document.getElementById("radio" + counter).checked = true;
+          counter++;
+          if (counter > 4) {
+            counter = 1;
+          }
+        }, 5000);
+      </script>
+    </section>
+
+    <section class="sch">
+      <h3 class="heading-additional" id="scroll-reveal">
+        "NOT ME BUT YOU"<br />
+      </h3>
+      <div id="scroll-reveal">
+        <div class="s11">
+          <div
+            class="scheme3"
+            style="
+              background: url(NP1.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+          <div class="s1">
+            <p class="additem">PAST EVENTS</p>
+            <br />
+            The National Service Scheme (NSS) is a Central Sector Scheme of
+            Government of India, Ministry of Youth Affairs & Sports. It provides
+            opportunity to the student youth of 11th & 12th Class of schools at
+            +2 Board level and student youth of Technical Institution, Graduate
+            & Post Graduate at colleges and University level of India to take
+            part in various government led community service activities &
+            programmes.
+          </div>
+        </div>
+      </div>
+      <div id="scroll-reveal">
+        <div class="s11" id="s112">
+          <div
+            class="scheme3"
+            style="
+              background: url(NP2.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+          <div class="s1">
+            <p class="additem">NSS-COMMITTEES</p>
+            <br />
+            NSS Operates In Well Defined Structural Approach. Their Are Ten(10)
+            Committees Curently Being Functional And Leaded By Committee Heads
+            In NSS.Voluteers Join Committees In Accordance With Their
+            Interest.Apart From Respective Committes Volunteers Can Give THeir
+            Inputs In Any Committee Inside NSS.
+          </div>
+        </div>
+      </div>
+      <div id="scroll-reveal">
+        <div class="s11">
+          <div
+            class="scheme3"
+            style="
+              background: url(NP3.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+          <div class="s1">
+            <p class="additem">National Integration Camps(NIC)</p>
+            <br />The National Integration Camp (NIC) is organized every year
+            and the duration of each camp is of 7 days with day-night boarding &
+            lodging. These camps are held in different parts of the country.
+            Each camp involves 200 NSS volunteers to undertake the scheduled
+            activities.
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h3>Join NSS Community</h3>
+      <div id="soc">
+        <div class="lg">
+          <a href="https://www.facebook.com/">
+            <img src="1.jpg" alt="Facebook" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="https://www.instagram.com/adworks.in/">
+            <img src="2.jpg" alt="Instagramk" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="https://www.linkedin.com/">
+            <img src="3.jpg" alt="Twitter" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="https://in.pinterest.com/">
+            <img src="4.jpg" alt="Gmail" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="https://twitter.com/">
+            <img src="7.jpg" alt="Gmail" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="tel:+919723919835">
+            <img src="9.jpg" alt="Gmail" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="https://www.youtube.com/">
+            <img src="10.jpg" alt="Gmail" />
+          </a>
+        </div>
+      </div>
+      <div class="contact">
+        <ul id="detail">
+          <li>
+            Sardar Vallabhbhai National Institute of Technology,
+            Ichchhanath,Surat-395007, Gujarat, INDIA
+          </li>
+        </ul>
+        <iframe
+          id="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14883.046651757!2d72.77672580014523!3d21.16188119911962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04dec8b56fdf3%3A0x423b99085d26d1f9!2sSardar%20Vallabhbhai%20National%20Institute%20of%20Technology%2C%20SVNIT.!5e0!3m2!1sen!2sin!4v1683705477121!5m2!1sen!2sin"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
+  </body>
+</html>

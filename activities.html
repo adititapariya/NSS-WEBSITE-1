@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSS-SVNIT - Activities</title>
+    <link rel="stylesheet" href="activities.css" />
+    <script>
+      function scrollReveal() {
+        var reveals = document.querySelectorAll("#scroll-reveal");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var revealTop = reveals[i].getBoundingClientRect().top;
+          var revealPoint = 50;
+
+          if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", scrollReveal);
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="home.html"><img src="logo.png" alt="AD WORKS" /></a>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li class="item"><a href="about us1.html">ABOUT</a></li>
+          <li class="item"><a href="home.html">HOME</a></li>
+
+          <li class="item"><a href="gallery.html">GALLERY</a></li>
+
+          <li class="item"><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="sch">
+      <h3 class="heading-additional">Activities<br /></h3>
+      <div id="scroll-reveal">
+        <div class="s11">
+          <div
+            class="scheme3"
+            style="
+              background: url(middle.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+          <div class="s1">
+            <p class="additem">PAST EVENTS</p>
+            <br />
+            The National Service Scheme (NSS) is a Central Sector Scheme of
+            Government of India, Ministry of Youth Affairs & Sports. It provides
+            opportunity to the student youth of 11th & 12th Class of schools at
+            +2 Board level and student youth of Technical Institution, Graduate
+            & Post Graduate at colleges and University level of India to take
+            part in various government led community service activities &
+            programmes.
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+      <div id="scroll-reveal">
+        <div class="s11">
+          <div
+            class="scheme3"
+            style="
+              background: url(NP2.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+          <div class="s1">
+            <p class="additem">NSS-COMMITTEES</p>
+            <br />
+            NSS Operates In Well Defined Structural Approach. Their Are Ten(10)
+            Committees Curently Being Functional And Leaded By Committee Heads
+            In NSS.Voluteers Join Committees In Accordance With Their
+            Interest.Apart From Respective Committes Volunteers Can Give THeir
+            Inputs In Any Committee Inside NSS.
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+      <div id="scroll-reveal">
+        <div class="s11">
+          <div
+            class="scheme3"
+            style="
+              background: url(NP3.png);
+              background-repeat: no-repeat;
+              background-size: cover;
+            "
+          ></div>
+          <div class="s1">
+            <p class="additem">National Integration Camps(NIC)</p>
+            <br />The National Integration Camp (NIC) is organized every year
+            and the duration of each camp is of 7 days with day-night boarding &
+            lodging. These camps are held in different parts of the country.
+            Each camp involves 200 NSS volunteers to undertake the scheduled
+            activities.
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h3>Join NSS Community</h3>
+      <div class="social">
+        <div class="lg">
+          <a href="https://www.facebook.com/">
+            <img src="1.jpg" alt="Facebook" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="https://www.instagram.com/adworks.in/">
+            <img src="2.jpg" alt="Instagramk" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="https://www.linkedin.com/">
+            <img src="3.jpg" alt="Twitter" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="https://in.pinterest.com/">
+            <img src="4.jpg" alt="Gmail" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="https://twitter.com/">
+            <img src="7.jpg" alt="Gmail" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="tel:+919723919835">
+            <img src="9.jpg" alt="Gmail" />
+          </a>
+        </div>
+        <div class="lg">
+          <a href="https://www.youtube.com/">
+            <img src="10.jpg" alt="Gmail" />
+          </a>
+        </div>
+      </div>
+      <div class="contact">
+        <ul class="detail">
+          <li class="listitem">
+            LOCATION:-<br />SVNIT CAMPUS, ICHCHANATH CIRCLE, SVNIT<br />
+            SURAT, GUJARAT-395007
+          </li>
+        </ul>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=1pyKsu7fL-nysscv0O4US3xYkz6j-mw8&ehbc=2E312F"
+        width="100%"
+        height="480"
+      ></iframe>
+    </footer>
+  </body>
+</html>
